@@ -1,24 +1,79 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import PostListForm from './Components/PostList/PostList';
+import NavBarText from './Components/NavBar/NavBar';
 import './App.css';
+import 'bootstrap';
+import UserForm from './Components/CreatePostForm/CreatePostForm';
+import UserList from './Components/Posts/Posts';
+import LikeButton from './Components/Buttons/LikeButton';
+import DislikeButton from './Components/Buttons/DislikeButton';
+
+
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hiya <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [users, setUsers] = useState ([
+    
+    
+]);
+    const generateId = () => {
+      let randomId;
+      let idExists = true;
+      while (idExists) {
+        randomId = Math.floor(Math.random() * 100000);
+        let userExists = users.filter((user) => user.id === randomId);
+        if (userExists.length > 0) {
+          continue;
+        } else {
+          idExists = false;
+        }
+      }
+      return randomId;
+    };
+    
+
+    const addUser = (user) => {
+      let newId = generateId(); // getting a unique id before updating
+      let finalUser = {
+        id: newId,
+        ...user
+      };
+      let updatedUsers = [...users, finalUser];
+      setUsers(updatedUsers);
+    };
+
+  return(
+
+    <div className='container-fluid'>
+      <h3 style = {{margin:'1em'}}>Social
+        <small className='text-muted'>Feed</small></h3>
+        
+      <div className='border-box'>
+        <NavBarText/>
+        <PostListForm/>
+      </div>
+      
+      <div className='border'>
+      
+      <UserForm addUser = {addUser}/>
+      <UserList users = {users}/>
+      <LikeButton/>
+      <DislikeButton/>
+
+            </div>
+      <div>
+      
+      
+      
+          
+        </div>
     </div>
+      
+     
+    
   );
 }
 

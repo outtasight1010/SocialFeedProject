@@ -1,0 +1,26 @@
+.dislike-button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px;
+ }
+ .dislike-button {
+    border: none; 
+    outline: none;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border: 2px solid #333;
+ }
+ .dislike-button:hover {
+    color: #fff;
+    background-color: #333;
+ }
+ .dislike-button.disliked {
+    color:green;
+    border-color: greenyellow;
+ }
