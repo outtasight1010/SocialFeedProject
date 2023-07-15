@@ -1,19 +1,17 @@
 import React from 'react';
 import 'bootstrap';
 import './NavBar.css';
-import {Nab,NavBar,Container} from 'react-bootstrap';
+
 
 
 const NavBarText = () => {
     return (
-        <nav className="navbar navbar-light bg-light">
-            <div className="container-fluid">
+        <nav className='nav-bar'>
+            <h1 style = {{margin:'1em'}}>Social
+            <small className='text-muted'>Feed</small></h1>
+        </nav>
                 
                
-               
-            </div>
-        </nav>
-
     );
 
 };
