@@ -8,6 +8,8 @@ import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 
 
 
+
+
 function App () {
   const[entries,setEntries] =useState([{name:'Michelle Lamelza', post:'I love cats.'},{name:'Melissa Lamelza', post:'I prefer doggos.'}])
   function addNewEntry(entry) {
@@ -19,8 +21,10 @@ function App () {
   <div>
     <NavBarText/>
     <DisplayPosts parentEntries={entries}/>
+    
 
     <UserPost addNewEntryProp={addNewEntry}/>
+    
   </div>
 
   );

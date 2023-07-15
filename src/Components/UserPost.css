@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 30px;
   position: center;
-  padding-left: 600px;
+  padding-left: 300px;
 
   
  
@@ -29,7 +29,15 @@
  }
 
  .user-post button:hover {
-  background-color:mintcream;
+  background-color:blue;
  }
+ .btn-primary {
+  background-color:blue;
+  font-size: small;
+  
+  font-family:cursive;
+  color:black;
+  margin-left: 780px;
+}
   
   

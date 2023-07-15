@@ -37,7 +37,7 @@ const UserPost = (props) => {
            value={post}
            onChange={(e) => setPost(e.target.value)}
         />
-      <button type='submit'>Submit</button>
+      <button className = 'btn btn-primary' button type='submit' style={{ width: "60px", height: "30px", font:"small-caption"}}>Create</button>
     </form>
 
     );
