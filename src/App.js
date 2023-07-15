@@ -31,11 +31,12 @@ function App () {
       <div className='col-md-6'>
     
     <DisplayPosts parentEntries={entries}/>
-    <LikeButton/>
-    <DislikeButton/>
+    
     
 
     <UserPost addNewEntryProp={addNewEntry}/>
+    <LikeButton/>
+    <DislikeButton/>
     
   </div>
     </div>

@@ -5,6 +5,7 @@
     margin: 20px;
  }
  .like-button {
+   border-radius: 10px;
     border: none; 
     outline: none;
     background-color: transparent;
@@ -15,6 +16,7 @@
     transition: all 0.2s ease-in-out;
     padding: 10px 20px;
     border: 2px solid #333;
+    margin-left: 300px;
  }
  .like-button:hover {
     color: #fff;
