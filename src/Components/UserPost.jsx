@@ -15,18 +15,13 @@ const UserPost = (props) => {
       post:post
     };
     console.log(newEntry);
-    props.addNewEntryProp();
+    props.addNewEntryProp(newEntry)
 
     
-    // we are sending name and post(quote) to an API
-    
-
+    // we are sending name and post to an API
     //Clear the form fields after submission
-    setName('');
-    setPost('');
+    
   };
-
-
   return (
     <form className='user-post' onSubmit ={handleSubmit}>
       <label>Name:</label>
@@ -42,8 +37,7 @@ const UserPost = (props) => {
            value={post}
            onChange={(e) => setPost(e.target.value)}
         />
-    
-        <button type='submit'>Submit</button>
+      <button type='submit'>Submit</button>
     </form>
 
     );

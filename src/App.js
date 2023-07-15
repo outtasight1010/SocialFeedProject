@@ -7,11 +7,6 @@ import 'bootstrap';
 
 
 
-
-
-
-
-
 function App () {
   const[entries,setEntries] =useState([{name:'Michelle Lamelza', post:'Cats > dogs.'},{name:'Melissa Lamelza', post:'I prefer doggos.'}])
   function addNewEntry(entry) {
@@ -35,7 +30,4 @@ function App () {
   
 
     
-        
-    
-
 export default App;
