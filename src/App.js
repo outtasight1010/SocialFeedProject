@@ -22,8 +22,14 @@ function App () {
   }
 
   return (
-  <div>
-    <NavBarText/>
+    
+   
+  <div className='container-fluid'>
+    
+    <div className='row'>
+      <NavBarText/>
+      <div className='col-md-6'>
+    
     <DisplayPosts parentEntries={entries}/>
     <LikeButton/>
     <DislikeButton/>
@@ -32,6 +38,8 @@ function App () {
     <UserPost addNewEntryProp={addNewEntry}/>
     
   </div>
+    </div>
+      </div>
 
   );
 

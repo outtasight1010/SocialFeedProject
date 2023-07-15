@@ -3,7 +3,14 @@
   flex-direction: column;
   max-width: 30px;
   position: center;
-  padding-left: 300px;
+ 
+  border-color: black;
+  border: 10px solid #ccc;
+  border-radius: 10px;
+  margin-left: 300px;
+  padding-inline-end: 850px;
+  padding-inline-start: 10px;
+  
 
   
  
@@ -14,10 +21,9 @@
   margin-bottom: 4px;
 }
 
-.user-post input,
-.user-post textarea {
+.user-post input{
   padding: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
  .user-post button {
   padding: 8px 12px;
