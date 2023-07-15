@@ -1,7 +1,7 @@
 .user-post {
-  display:-ms-grid;
+  display:grid;
   flex-direction: column;
-  max-width: 40px;
+  max-width: 30px;
   position: center;
   padding-left: 500px;
 
@@ -17,13 +17,13 @@
 .user-post input,
 .user-post textarea {
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
  .user-post button {
   padding: 8px 12px;
   background-color:aliceblue;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
   cursor: pointer;
   font-weight: bold;
  }
