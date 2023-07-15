@@ -4,6 +4,7 @@ import NavBarText from './Components/NavBar/NavBar';
 import UserPost from './Components/UserPost';
 import './App.css';
 import 'bootstrap';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 
 
 
@@ -17,6 +18,7 @@ function App () {
   return(
   <div>
     <NavBarText/>
+    <DisplayPosts parentEntries={entries}/>
 
     <UserPost addNewEntryProp={addNewEntry}/>
   </div>
