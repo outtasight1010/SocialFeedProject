@@ -14,6 +14,8 @@ const UserPost = (props) => {
       name:name,
       post:post
     };
+    console.log(newEntry);
+    props.addNewEntryProp();
 
     
     // we are sending name and post(quote) to an API
