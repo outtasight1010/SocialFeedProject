@@ -1,7 +1,31 @@
 .user-post {
-  display:flex;
+  display:-ms-grid;
+  flex-direction: column;
+  max-width: 40px;
+  position: center;
+  padding-left: 500px;
+
   
  
 }
+
+.user-post label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.user-post input,
+.user-post textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+ .user-post button {
+  padding: 8px 12px;
+  background-color:azure;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+ }
   
   
