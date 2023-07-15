@@ -1,7 +1,10 @@
 .display-posts {
-    display: -ms-inline-grid;
+    display: center;
     flex-direction:row;
     font-style:oblique;
+    
+    
+    padding-left: 500px;
     
 }
     

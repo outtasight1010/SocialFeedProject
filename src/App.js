@@ -5,6 +5,8 @@ import UserPost from './Components/UserPost';
 import './App.css';
 import 'bootstrap';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import LikeButton from './Components/Buttons/LikeButton';
+import DislikeButton from './Components/Buttons/DislikeButton';
 
 
 
@@ -21,6 +23,8 @@ function App () {
   <div>
     <NavBarText/>
     <DisplayPosts parentEntries={entries}/>
+    <LikeButton/>
+    <DislikeButton/>
     
 
     <UserPost addNewEntryProp={addNewEntry}/>
