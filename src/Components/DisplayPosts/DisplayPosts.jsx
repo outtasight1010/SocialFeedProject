@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './DisplayPosts.css';
-import UserPost from '../UserPost';
+
 
 
 const DisplayPosts = (props) => {
   return (
-  <table>
+  <table className='display-posts'>
     <thead>
       <tr>
         <th>Name</th>
@@ -16,6 +16,7 @@ const DisplayPosts = (props) => {
     {props.parentEntries.map((entry) => {
       return (
         <tr>
+          
           <td>{entry.name}</td>
           <td>{entry.post}</td>
         </tr>
