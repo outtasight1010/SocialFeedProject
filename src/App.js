@@ -33,14 +33,15 @@ function App () {
     <DisplayPosts parentEntries={entries}/>
     
     
+    
 
     <UserPost addNewEntryProp={addNewEntry}/>
     <LikeButton/>
     <DislikeButton/>
     
-  </div>
     </div>
-      </div>
+  </div>
+</div>
 
   );
 
