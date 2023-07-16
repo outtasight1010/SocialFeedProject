@@ -31,17 +31,14 @@ function App () {
       <div className='col-md-6'>
     
     <DisplayPosts parentEntries={entries}/>
-    
-    
-    
-
     <UserPost addNewEntryProp={addNewEntry}/>
     <LikeButton/>
     <DislikeButton/>
-    
     </div>
-  </div>
-</div>
+    </div>
+    </div>
+ 
+
 
   );
 
@@ -49,7 +46,4 @@ function App () {
   
 };
 
-  
-
-    
 export default App;
