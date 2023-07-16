@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //import PostListForm from './Components/PostList/PostList';
 import NavBarText from './Components/NavBar/NavBar';
-import UserPost from './Components/UserPost';
+import UserPost from './Components/UserPosts/UserPost';
 import './App.css';
 import 'bootstrap';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
