@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 30px;
   position: center;
- 
+  margin-inline: 10px;
   border-color: black;
   border: 5px solid #ccc;
   border-radius: 10px;
