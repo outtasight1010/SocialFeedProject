@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import PostListForm from './Components/PostList/PostList';
+import Post from './Components/Post/Post';
 import NavBarText from './Components/NavBar/NavBar';
 import UserPost from './Components/UserPosts/UserPost';
 import './App.css';
@@ -32,8 +32,7 @@ function App () {
     
     <DisplayPosts parentEntries={entries}/>
     <UserPost addNewEntryProp={addNewEntry}/>
-    <LikeButton/>
-    <DislikeButton/>
+    
     </div>
     </div>
     </div>

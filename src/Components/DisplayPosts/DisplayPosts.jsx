@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './DisplayPosts.css';
+import Post from '../Post/Post';
 
 
 
@@ -16,10 +17,10 @@ const DisplayPosts = (props) => {
     {props.parentEntries.map((entry) => {
       return (
         <tr>
-          
-          <td>{entry.name}</td>
-          <td>{entry.post}</td>
-        </tr>
+
+          <Post entry = {entry}/>
+          </tr>
+       
       );
 
     })}
