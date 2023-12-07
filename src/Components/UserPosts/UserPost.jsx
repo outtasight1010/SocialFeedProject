@@ -18,7 +18,7 @@ const UserPost = (props) => {
     props.addNewEntryProp(newEntry)
 
     
-    // we are sending name and post to an API
+    // we are comment to an API
     //Clear the form fields after submission
     
   }

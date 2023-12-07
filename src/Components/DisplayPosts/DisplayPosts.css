@@ -1,7 +1,7 @@
 .display-posts {
   display:flex;
   flex-direction: column;
-  max-width: 30px;
+  max-width: 20px;
   position: center;
   
   border-color: black;

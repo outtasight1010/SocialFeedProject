@@ -13,7 +13,7 @@ import DislikeButton from './Components/Buttons/DislikeButton';
 
 
 function App () {
-  const [entries, setEntries] =useState([{name:'Michelle Lamelza', post:'I love cats.'},{name:'Melissa Lamelza', post:'I prefer doggos.'}])
+  const [entries, setEntries] =useState([{name:'Michelle Lamelza', post:'I love kitties.'},{name:'Melissa Lamelza', post:'I prefer doggos.'}])
   function addNewEntry(entry) {
 
     let tempEntries = [entry, ...entries];
