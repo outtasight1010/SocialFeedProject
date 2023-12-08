@@ -21,14 +21,14 @@
 }
 
 .user-post input{
-  padding: 8px;
+  padding: 5px;
   margin-bottom: 15px;
 }
  .user-post button {
   padding: 8px 12px;
-  background-color:aliceblue;
+  background-color:rgb(22, 135, 235);
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
  }
