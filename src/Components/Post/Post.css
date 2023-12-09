@@ -6,7 +6,9 @@
     padding: 20px; /* Add padding for spacing */
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-left: 100px; /* Adjust the margin-left value to move the form to the right */
   }
+  
   
   .user-post label {
     font-weight: bold;
